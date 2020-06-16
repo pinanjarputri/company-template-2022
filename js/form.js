@@ -3,6 +3,7 @@
   var apellido=document.getElementById("apellido");
   var email=document.getElementById("correo");
   var telephone=document.getElementById("telephone");
+  var tipoSeguro=document.getElementById("tiposeguro");
 
 
 function iniciar(){
@@ -11,6 +12,7 @@ function iniciar(){
     apellido.addEventListener("blur", validarApellido, false);
     email.addEventListener("blur", validarEmail, false);
     telephone.addEventListener("blur", validarTelephone, false);
+    tipoSeguro.addEventListener("blur", validartiposeguro, false);
 
 
     }
@@ -51,26 +53,16 @@ function iniciar(){
         }
     }
 
-    function validar(){
-            var tipoSeguro=document.getElementById
-            ('tiposeguro');
-            if(tipoSeguro.value==0 ||
-                tipoSeguro.value == "")
-              {
-               alert("Selecciona Una opción");
-               tipoSeguro.focus();
-              }
-            }
-/*
-    function validarTiposeguro(){
-        if(tiposeguro.value==''){
-            tiposeguro.setCustomValidity('Señale su opcion');
-            tiposeguro.style.background='#fed136';
+     function validartiposeguro(){
+        if(tipoSeguro.value==0){
+            tipoSeguro.setCustomValidity('Señale su opcion');
+            tipoSeguro.style.background='#fed136';
         }else{
-            tiposeguro.setCustomValidity('');
-            tiposeguro.style.background='#fd7e14';
+            tipoSeguro.setCustomValidity('');
+            tipoSeguro.style.background='#fd7e14';
         }
     }
-*/
+
+
 
 window.addEventListener("load", iniciar, false);
