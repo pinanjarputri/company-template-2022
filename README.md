@@ -5,7 +5,7 @@ Form and Validation.<br/>
 Responsive<br/>
 Fixed Menu<br/>
 <hr/>
-<a href="https://agusprats.github.io/CiaSeguro/" target="new">SEE DEMO</a>
+<a href="https://agusprats.github.io/CompanyProfile" target="new">SEE DEMO</a>
 
 <hr/>
 
